@@ -2,7 +2,8 @@ import React from 'react';
 import './Header.css';
 import PersonIcon from '@mui/icons-material/Person';
 import { IconButton } from '@mui/material';
-import './forumIcon.svg';
+import ForumIcon from '@material-ui/icons/Forum'
+//import './forumIcon.svg';
 
 function Header() {
   return (
@@ -14,7 +15,12 @@ function Header() {
             className='header__logo' 
             src="https://logos-world.net/wp-content/uploads/2020/09/Tinder-Symbol.png" 
             alt=""
-        ></img>
+        />
+        <IconButton>
+            <ForumIcon fontSize='large' className='header__icon' />
+        </IconButton>
+        
+       
         
     </div>
   )
